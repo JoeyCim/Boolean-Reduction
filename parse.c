@@ -169,6 +169,12 @@ link_node *add_node(char var_name) {
         return new_node;
     }
     else {
+        printf("%d\n", var_count);
+         if (var_count >= MAX_VAR) {
+            printf("Sorry, no more than %d variables can be used\n", MAX_VAR);
+            exit(1);
+        }
+         
         link_node *iter1 = var_head;
         link_node *iter2 = var_head;
         while (iter2) {
