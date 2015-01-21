@@ -1,1 +1,1 @@
-# Boolean-Reduction
+# Reduce a boolean expression
